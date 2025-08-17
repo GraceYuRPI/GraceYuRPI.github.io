@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grace Yu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
+</style>
+</head>
+<body class="w3-aeroblue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="IMG_9187.JPG" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>Grace Yu</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
+    <a href="GraceYu_resume.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    </div>
+  </header>
+  
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h2><b>About Me</b></h2>
+    <p>Hi, my name is Grace, I am a student at Rensselear Polytechnic Institute, majoring in aeronautical and mechanical engineering. 
+      I do a lot of on-campus research as part of the <a href="https://franckdjeumou.github.io/">Xtreme Autonomy Lab (XAL)</a>, the <a href="https://rpi-isaac-lab.github.io/">Intelliigent Systems, Automation, and Control Lab (ISAaC)</a>, and the <a href="https://cscms.rpi.edu/">Center for Smart Convergent Manufacturing Systems (CSCMS)</a>. 
+      I am especially interested in extreme autonomy in vehicles, advanced driver assist systems (ADAS), sensor fusion and sensorization, and numerical optimization and simulation techniques. 
+      I spent Spring and Summer 2025 doing full time research, and I want to translate what I learned in industry. I am currently seeking an internship for Spring 2026 and onward.</p>
+    
+    <p>
+      <a href="GraceYu_resume.pdf">
+        <button class="w3-button w3-green w3-padding-large w3-margin-top w3-margin-bottom w3-hover-deep-orange">
+          <i></i>Download Resume
+        </button>
+      </a>
+    </p>
+    <hr>
+
+    <h2><b>Research</b></h2>
+    <p>I do a lot of research on campus, in various capacities, whether as a mechanical design engineer, electrical engineer, firmware developer, machinist, electrician, etc.
+      Unfortunately, a lot of my work has yet to be published and therefore technical details cannot be discussed in depth, but the following is an overview of each of the 3 major projects that I have been apart of. </p>
+    <p>
+      
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="Can-Am.html">
+        <img src="/research/modcon_can-am.png" alt="Can-AM" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Modelling and Control of an Off Road Vehicle</b></p>
+        <p>Despite recent progress in self-driving cars or autonomous features in advanced driver assistance systems (ADAS) to improve road safety, 
+          navigating through adverse conditions remains challenging, even at low speeds. When the vehicle is operating closer to the limit of its physical capabilities, 
+          such as moving at high velocities, on low grip surfaces such as snow or gravel, or attempting to avoid a collision, 
+          the challenge to navigate in a controlled manner is exacerbated [1-2]. Unfortunately, under adverse conditions, 
+          the vehicle may be unstable and will need to operate beyond its physical limits to follow pre-specified routes. 
+          ADAS is designed to keep the vehicle operating well below its limits.  Under extreme conditions, not only will it become a hinderance, 
+          but it may also compromise road safety. We aim to customize a Can-Am Maverick X3 into a reliable, 
+          self-driving research platform to develop and validate novel autonomous controllers that may improve road safety and aid further development in ADAS.   </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="CSCMS.html">
+        <img src="/research/cscms.jpg" alt="SOTB" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Convergent Manufacturing of Ceramic-Metal Composites </b></p>
+        <p> Metal alloys are often frequently used in high-stress conditions, but they often reach their melting or heat deflection point in ultra-high temperature applications. 
+          Ceramic, however, excels at withstanding high heat and has excellent hardness, but will fail under moderate tensile stress and possibly ultra-high compressive stress. 
+          Many aerospace applications therefore rely on extremely expensive superalloys or a thin layer of thermalbaric cladding for their ultra-high temperature applications. 
+          We propose to create functionally-graded ceramic-metal composites using a smart, convergent manufacturing system, 
+          creating strong interlayer bonds through field assisted sintering, direct energy deposition, etc. I worked all facets of this project,
+          though my time was predominantly spent as the power electronics lead and tooling designer, though occasionally I did tooling and die fabrication too.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="crc.html">
+        <img src="/research/CRC-thumbnail.png" alt="AirfoilML" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>CRC-3 Vertical-Takeoff-and-Landing Fixed-Wing Aircraft </b></p>
+        <p> Traditional fixed-wing aircraft excels at long-distance quasi-steady state flight, but requires an extremely long run way because it needs to reach a high velocity before taking flight. 
+          Rotorcrafts are much less efficient at level flight but can takeoff and land vertically. A VTOL, or vertical-takeoff-and-landing aircraft takes advantage of both rotorcrafts' ability to takeoff and land in tight spaces
+          and fixed-wing aircraft's long range efficiency. The CRC-3 is a 3lb variant of a VTOL, where it is a quadcopter with fixed rotors and wings mounted vertically in quadcopter mode. It takes off in quadcopter mode, transitions, 
+          and can fly in fixed-wing mode afterwards. I mostly worked on the hardware development team, doing CFD and lift calculations to size the wing, repackaging electronics, and manufacturing the drone. 
+          I also worked on a virtual-physics model of the drone as well as validating the results of various test flights. 
+        </p>
+      </div>
+
+    </p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="about"><hr></div>
+  
+<div class="w3-main" style="margin-left:300px"></div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h2><b>Projects</b></h2>
+     </div>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="RM.html">
+        <img src="/RM/RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Rensselaer Motorsport (FSAE)</b></p>
+        <p>We design and build electric racecars on an annual basis. I am the current Chassis-Suspension-Tires Lead, working primarily on the vehicle dynamics side of the team.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="SOTB.html">
+        <img src="\SOTB\SOTB_thumbnail.png" alt="SOTB" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Student on the Beamline</b></p>
+        <p>As part of a student team, we went to Canadian Light Source, a synchrotron particle accelerator, to investigate the effect of radiation damage at different temperatures, during X-ray diffraction experiments. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://github.com/AkiraY1/IntelligentAirfoilDesign">
+        <img src="/AirfoilML/airfoil_thumbnail.jpg" alt="AirfoilML" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Machine Learning Based Cost Reduction of Airfoil Optimization</b></p>
+        <p>This was a collaborative effort between a friend and I, where we investigated the effectiveness of generatively designing airfoil geometries using ML algorithms. It was a continuation of a passion project that I did back in Grade 10 on using data augmentation techniques to improve the design selection process of airfoils with single row vertex generators. This new version aimed to focus purely on airfoils to improve data validity and investigate the best suited ML methods.</p>
+      </div>
+    </div>
+
+   <!-- Second Photo Grid-->
+   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="EE.html">
+        <img src="/EE/EE_thumbnail.png" alt="EE" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Damped Oscillation of a Mass-Spring System</b></p>
+        <p>Investigated the effect of the variation of viscosity of the aqueous glycerin solution and comparing the experimental results to a highly simplified model.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="MathIA.html">
+        <img src="/MathIA/MathIA_thumbnail.png" alt="MathIA" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Monte-Carlo Model of the Scattering Pattern Due to Collisions of Spherical Objects</b></p>
+        <p>I built a non-ballistic, kinematic model in python to simulate the scatter patterns produced by a ball colliding with a peg, where the initial position of the ball is dictated by some statistical distribution. I then validated the model mathematically. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="PhysIA.html">
+        <img src="PhysIA/PhysIA_thumbnail.png" alt="PhysIA" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Measurement of Single Slit Diffraction Pattern Using an Linear Actuator </b></p>
+        <p>Proposed a novel method to measure the intensity profile of a single slit diffraction pattern, and validated the method via comparing it with theoretical predictions. </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-green footer">
+  <div class="w3-row-padding" id="contact">
+    <div class="w3-third">
+      <h3><b>Contact</b></h3>
+      <p>Please feel free to reach out to me via LinkedIn or by Email.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://www.linkedin.com/in/grace-yu-00997a270/">LinkedIn</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="GraceYu_resume.pdf">Resume</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="mailto:zininggraceyu@gmail.com">Email</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="#portfolio">Back to Top</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+
+  </div>
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

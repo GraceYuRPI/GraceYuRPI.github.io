@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grace Yu - Rensselaer Motorsport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
+</style>
+</head>
+<body class="w3-aeroblue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="IMG_9187.JPG" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>Grace Yu</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
+    <a href="GraceYu_resume_portfolio.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>Rensselaer Motorsport</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <img src="/RM/rm28.jpg" alt="RM28" style="width:100%">
+        <img src="/RM/RM27.jpg" alt="RM27" style="width:100%">
+    </div>
+    <div class="w3-twothird w3-container w3-margin-bottom">
+        <p>Rensselaer Motorsport is a club associated with the Mechanical, Aerospace, and Nuclear Engineering Department of RPI. We are a fourth-year FSAE Electric team. 
+          Last year we finished 7th at the Formula Hybrid + Electric Competition in New Hampshire and attended the Formula SAE Electric Competition in Michigan. 
+          We managed to get our first running car before competition last year and tested it extensively.
+          <br>
+          This is my third year on the team, I am the Senior Chassis-Suspension-Tires Lead. My primary responsibilities are designing the chassis and suspension systems, 
+          as well as conducting tires studies using various tire models and data to select the optimal tire and subsequently determine the suspension setup - 
+          the ultimate goal of my subsystem. In addition, as the senior lead, I am also responsible for teaching junior members of the team mechanical design and vehicle dynamics. 
+          I was Chassis-Suspension-Tires Lead last year and Chassis-Suspension Manufacturing Lead the year prior.
+          <br>
+          For RM28, the primary goal was to package everything into a robust rolling chassis as soon as possible, 
+          because we did not have a functional electrical system yet and could not validate many of our design decisions. However, this year, 
+          using last year's testing data, we were able to select many areas of the car to improve. However, for RM29, I had more leeway to optimize
+          parts through lightweighting and DFM - such that not only the resultant parts are lighter, they are also easier to machine.
+          <br>
+          The pictures on the left are the previous 2 cars that I helped build, RM28 and RM27. Below is the design of RM29, followed by some of the subprojects I worked on for the team. 
+          <br>
+          <br>
+          <img src="/RM/rm29_CAD.png" alt="RM29" style="width:82%" class="center-align">
+    </div>
+  </div>
+
+<div class="w3-main" style="margin-left:300px"></div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h2><b>Projects</b></h2>
+     </div>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="RM.html">
+        <img src="/RM/RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Tire Study</b></p>
+        <p>We design and build electric racecars on an annual basis. I am the current Chassis-Suspension-Tires Lead, working primarily on the vehicle dynamics side of the team.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="SOTB.html">
+        <img src="\SOTB\SOTB_thumbnail.png" alt="SOTB" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Suspension Optimization</b></p>
+        <p>As part of a student team, we went to Canadian Light Source, a synchrotron particle accelerator, to investigate the effect of radiation damage at different temperatures, during X-ray diffraction experiments. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://github.com/AkiraY1/IntelligentAirfoilDesign">
+        <img src="/AirfoilML/airfoil_thumbnail.jpg" alt="AirfoilML" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Parametric Chassis FEA and Optimization</b></p>
+        <p>This was a collaborative effort between a friend and I, where we investigated the effectiveness of generatively designing airfoil geometries using ML algorithms. It was a continuation of a passion project that I did back in Grade 10 on using data augmentation techniques to improve the design selection process of airfoils with single row vertex generators. This new version aimed to focus purely on airfoils to improve data validity and investigate the best suited ML methods.</p>
+      </div>
+    </div>
+
+   <!-- Second Photo Grid-->
+   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="EE.html">
+        <img src="/EE/EE_thumbnail.png" alt="EE" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Hub Design</b></p>
+        <p>Investigated the effect of the variation of viscosity of the aqueous glycerin solution and comparing the experimental results to a highly simplified model.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="MathIA.html">
+        <img src="/MathIA/MathIA_thumbnail.png" alt="MathIA" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Wheel Center Design</b></p>
+        <p>I built a non-ballistic, kinematic model in python to simulate the scatter patterns produced by a ball colliding with a peg, where the initial position of the ball is dictated by some statistical distribution. I then validated the model mathematically. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="PhysIA.html">
+        <img src="PhysIA/PhysIA_thumbnail.png" alt="PhysIA" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Rocker Design</b></p>
+        <p>Proposed a novel method to measure the intensity profile of a single slit diffraction pattern, and validated the method via comparing it with theoretical predictions. </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-green footer">
+  <div class="w3-row-padding" id="contact">
+    <div class="w3-third">
+      <h3><b>Contact</b></h3>
+      <p>Please feel free to reach out to me via LinkedIn or by Email.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://www.linkedin.com/in/grace-yu-00997a270/">LinkedIn</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+            <span class="w3-large"><a href="GraceYu_resume.pdf">Resume</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="mailto:zininggraceyu@gmail.com">Email</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="index.html">Back to Home</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="w3-container w3-padding-large center" >
+    <h4><i>Designed using resources from W3Schools</i></h4>
+  </div>
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

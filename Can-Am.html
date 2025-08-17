@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grace Yu - Modelling and Control of an Off Road Vehicle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
+</style>
+</head>
+<body class="w3-aeroblue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="IMG_9187.JPG" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>Grace Yu</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
+    <a href="GraceYu_resume_portfolio.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>Modelling and Control of an Off Road Vehicle</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <img src="/RM/RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
+        <img src="/RM/ISO_car.jpg" alt="isocar" style="width:100%" class="w3-hover-opacity">
+        <img src="/RM/FSUSP.jpg" alt="FSUSP" style="width:100%" class="w3-hover-opacity">
+        <img src="/RM/RSUSP.jpg" alt="RSUSP" style="width:100%" class="w3-hover-opacity">
+        <img src="/RM/RM28_fsusp.gif" alt="FSUSP28" style="width:100%" class="w3-hover-opacity">
+    </div>
+    <div class="w3-twothird w3-container w3-margin-bottom">
+        <p>Rensselaer Motorsport is a club associated with the Mechanical, Aerospace, and Nuclear Engineering Department of RPI. We are a third-year FSAE Electric team. 
+          <br>
+          This is my second year on the team, and I am the current Chassis-Suspension-Tires Lead, responsible to both managing, designing, and manufacturing everything related to achieving a rolling chassis - chassis, suspension, tires, brakes, and ergonomics.
+          <br>
+          Last year, I was the Chassis-Suspension Manufacturing Lead, where my responsibilities were primarily designing and implementing fixtures, as well as delegating and managing all manufacturing tasks such that all components were installed or manufactured to tolerance, before major deadlines. 
+          To give some more context as to what I did, I want to dive into a few of the projects that I worked on.
+          <br>
+          My first project with the team was designing a chassis jigging system. I worked closely with the Vehicle Dynamics Lead last year and after a lot of research and design work, we decided to jig all the lower tubes via aluminum box tubes and jig the major nodes. 
+          In addition, we decided to create a grid that provided guidelines as to where all the tubes should go. We decided to keep the practice of tacking some of the main datum tubes to our chassis table and with the grid, we can accurate locate them such that all our main datum points are accurate in space relative to each other. 
+          I machined most of the jigs manually, on a vertical mill, to a tolerance of +/- 0.005", and helped the during chassis manufacturing to implement these jigs. I also designed an a-arm coping and welding jig where we created an aluminum plate jig by transfering a printed template onto it with an optical punch, then bolting down flanged bushings to constrain to bearing cups during welding.
+          We were able to meet our manufacturing deadlines and was able to spend the rest of the year helping other subsystems, building towards our goal of having a running car.
+          <br>
+          Primarily, I helped out the electrical side of things as needed. I designed and made many smaller components for the Low Voltage Subsystem and helped with manufacturing the accmulator container and ensuring that everything is properly constrained and insulated before battery segments were installed. 
+          For example, I made design changes to many differnet boxes to constrain electronics and ensured that they were of the corresponding desired fit class.  
+          <br>
+          This year, in my new position, I have been taking on even more design tasks.
+          <br> 
+          So far, I have started doing design work starting from a complete blank page. Minus a few things that we were carrying forward from past design iterations, we started from the ground up, from tire selection. 
+          I looked into different tires, available from the FSAE Tire-Testing Consortium, processed through some MATLAB scripts, and non-dimensionalized the data for the tire compound that we already have, given that alternative compounds do not yield a substantial enough improvement to replace all the tires which we currently have in stock.
+          Then, more "cost"-benefit analyses were performed to determine the roll-ride characteristics of the car, via a custom MATLAB suspension roll-ride-rate and lateral load transfer calculator, then using the results and re-dimensionalizing the tire data, we determined the optimum slip angles.
+          <br>
+          Then, we determined the optimum Ackermann percentage, determined the suspension hardpoints, and iterated our design using data generated by VI Grade's SuspensionGen software. Using these hardpoints, we then designed and optimized our bellcranks, and designed the chassis around these suspension hardpoints and other subsystem's needs.
+          <br>
+          Aside from design work, I also work on a lot of managerial tasks - resource and funding allocation, reaching out to sponsors and alumni to acquire parts, and learning from alumni to recover knowledge lost over the COVID years. 
+        </p>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-green footer">
+  <div class="w3-row-padding" id="contact">
+    <div class="w3-third">
+      <h3><b>Contact</b></h3>
+      <p>Please feel free to reach out to me via LinkedIn or by Email.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://www.linkedin.com/in/grace-yu-00997a270/">LinkedIn</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+            <span class="w3-large"><a href="GraceYu_resume_portfolio.pdf">Resume</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="mailto:zininggraceyu@gmail.com">Email</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="index.html">Back to Home</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="w3-container w3-padding-large center" >
+    <h4><i>Designed using resources from W3Schools</i></h4>
+  </div>
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
