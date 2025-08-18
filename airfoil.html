@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grace Yu - Machine Learning Based Cost Reduction of Airfoil Optimization</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
+</style>
+</head>
+<body class="w3-aeroblue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="IMG_9187.JPG" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>Grace Yu</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
+    <a href="GraceYu_resume.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>Machine Learning Based Cost Reduction of Airfoil Optimization</b></h1>
+    </div>
+  </header>
+
+  <div class="w3-row-padding">
+    
+    <div class=" w3-container w3-margin-bottom">
+        <p>
+           Many marine, aerospace, and automotive products have highly complex geometry, wherefore prototyping for functional benchmarking is generally
+           infeasible and analyzing their performance rely 
+           primarily on computational fluid dynamics (CFD) and other computer-aided engineering (CAE) software suites. Not only are they
+           typically proprietary, design optimization, when coupled with high-order computational methods is highly costly. Through two different
+           attempts, we aimed to take a step towards cost reduction of design optimization by reducing the need for iterative simulation using 
+           data augmentation and generative-design-inspried techniques. We chose airfoils as the target geometry because their 2D analysis data are 
+           easy to generate for a pilot study, but 3D analysis is sufficiently complicated such that it may benefit from a ML-based design optimization apparatus. 
+           <br>
+           The first attempt entailed scraping data from airfoil databases such as the UIUC Airfoil Data Site and TU Delft's Airfoil Coordinate Database, as well 
+           as some published windtunnel data of DU-97 with various combinations of vortex generator geometries attached. The end goal was to produce an augmented database 
+           of airfoil and vortex generator combination for high-lift, low-drag applications. The algorithm performed well with validation data and was able to produce 
+           rough performance coefficients (Cl, Cd, etc) in just seconds (see the first document below for further results). However, due to the lack of experimental data on 
+           more airfoil-vortex-generator geometry combinations, the model lacked validation for low-thickness airfoil when vortex generators are attached. 
+           <br>
+           The second attempt focused more on 2D airfoil data to remove the uncertainty in validation. It also allowed a higher-order airfoil geometry parametrization. 
+           The best trainig algorithm was found to be ExtraTrees, where it only took a few minutes to train on a standard desktop and was able to suggest multiple combination of airfoil
+           geometrical characteristics based on the user-desired performance characteristics (see the second document below for further results).
+            
+           <br>
+           I collaborated with Akira Yoshiyama on the second part of this project and we won multiple awards at the 2022 Fraser Valley Regional Science Fair and 
+           both the Gold Excellence Award (top 10 overall) and the NSERC Young Innovator's Award at the 2022 Canada-Wide Science Fair. 
+        </p>
+    </div>
+  
+  
+  <div class="w3-row-padding embeded">
+    <embed
+	src="/AirfoilML/g10_science_fair.pdf"
+	type="application/pdf"
+	width="100%"
+	height="700px"
+	title="g10_science_fair"
+/>
+  </div>
+
+  <div class="w3-row-padding embeded">
+    <embed
+	src="/AirfoilML/Conference_Report_Akira_Grace.pdf"
+	type="application/pdf"
+	width="100%"
+	height="700px"
+	title="Airfoil_MLOptimization_Article_Yoshiyama_Yu"
+/>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-green footer">
+  <div class="w3-row-padding" id="contact">
+    <div class="w3-third">
+      <h3><b>Contact</b></h3>
+      <p>Please feel free to reach out to me via LinkedIn or by Email.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://www.linkedin.com/in/grace-yu-00997a270/">LinkedIn</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+            <span class="w3-large"><a href="GraceYu_resume.pdf">Resume</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="mailto:zininggraceyu@gmail.com">Email</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="index.html">Back to Home</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

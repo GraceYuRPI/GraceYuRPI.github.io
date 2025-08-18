@@ -24,7 +24,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
-    <a href="GraceYu_resume_portfolio.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+    <a href="GraceYu_resume.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
   </div>
 </nav>
 
@@ -45,41 +45,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/RM/RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
-        <img src="/RM/ISO_car.jpg" alt="isocar" style="width:100%" class="w3-hover-opacity">
-        <img src="/RM/FSUSP.jpg" alt="FSUSP" style="width:100%" class="w3-hover-opacity">
-        <img src="/RM/RSUSP.jpg" alt="RSUSP" style="width:100%" class="w3-hover-opacity">
-        <img src="/RM/RM28_fsusp.gif" alt="FSUSP28" style="width:100%" class="w3-hover-opacity">
+        <img src="/research/Can-Am2.jpg" alt="RM" style="width:100%">
     </div>
     <div class="w3-twothird w3-container w3-margin-bottom">
-        <p>Rensselaer Motorsport is a club associated with the Mechanical, Aerospace, and Nuclear Engineering Department of RPI. We are a third-year FSAE Electric team. 
+        <p>Despite recent progress in self-driving cars or autonomous features in advanced driver assistance systems (ADAS) to improve road safety, 
+          navigating through adverse conditions remains challenging, even at low speeds. When the vehicle is operating closer to the limit of its physical capabilities, 
+          such as moving at high velocities, on low grip surfaces such as snow or gravel, or attempting to avoid a collision, 
+          the challenge to navigate in a controlled manner is exacerbated. Unfortunately, under adverse conditions, 
+          the vehicle may be unstable and will need to operate beyond its physical limits to follow pre-specified routes. 
+          ADAS is designed to keep the vehicle operating well below its limits.  Under extreme conditions, not only will it become a hinderance, 
+          but it may also compromise road safety. We aim to customize a Can-Am Maverick X3 into a reliable, 
+          self-driving research platform to develop and validate novel autonomous controllers that may improve road safety and aid further development in ADAS.   
           <br>
-          This is my second year on the team, and I am the current Chassis-Suspension-Tires Lead, responsible to both managing, designing, and manufacturing everything related to achieving a rolling chassis - chassis, suspension, tires, brakes, and ergonomics.
+          We elected a Can-Am as the base-platform due to its off-road capabilities, but it did not have decoded engine sensor data and lacked sensors such as 
+          steering position, brake pressure, and high-fidelity wheel speed sensors. Therefore, we started to work on embedding sensors and 
+          decoding engine sensor data, signal filtering, and sensor fusion, as well as automating the steering, throttle, and brakes using 
+          signal spoofing and/or actuators. 
           <br>
-          Last year, I was the Chassis-Suspension Manufacturing Lead, where my responsibilities were primarily designing and implementing fixtures, as well as delegating and managing all manufacturing tasks such that all components were installed or manufactured to tolerance, before major deadlines. 
-          To give some more context as to what I did, I want to dive into a few of the projects that I worked on.
+          I am a member of the platform research team and I primary responsibilities entail designing and implementing the electrical systems 
+          and integrating them into the vehicle using mechanical means while factoring in features such as vibration and harshness, waterproofing, 
+          etc. I worked on both low-level electronics - high speed analog signal processing and filtering, and the main power distribution system
+          - low voltage DC power electronics. I am also involved in communication and control archiecture design, as well as the hardware and embedded implementation of these features. 
           <br>
-          My first project with the team was designing a chassis jigging system. I worked closely with the Vehicle Dynamics Lead last year and after a lot of research and design work, we decided to jig all the lower tubes via aluminum box tubes and jig the major nodes. 
-          In addition, we decided to create a grid that provided guidelines as to where all the tubes should go. We decided to keep the practice of tacking some of the main datum tubes to our chassis table and with the grid, we can accurate locate them such that all our main datum points are accurate in space relative to each other. 
-          I machined most of the jigs manually, on a vertical mill, to a tolerance of +/- 0.005", and helped the during chassis manufacturing to implement these jigs. I also designed an a-arm coping and welding jig where we created an aluminum plate jig by transfering a printed template onto it with an optical punch, then bolting down flanged bushings to constrain to bearing cups during welding.
-          We were able to meet our manufacturing deadlines and was able to spend the rest of the year helping other subsystems, building towards our goal of having a running car.
-          <br>
-          Primarily, I helped out the electrical side of things as needed. I designed and made many smaller components for the Low Voltage Subsystem and helped with manufacturing the accmulator container and ensuring that everything is properly constrained and insulated before battery segments were installed. 
-          For example, I made design changes to many differnet boxes to constrain electronics and ensured that they were of the corresponding desired fit class.  
-          <br>
-          This year, in my new position, I have been taking on even more design tasks.
-          <br> 
-          So far, I have started doing design work starting from a complete blank page. Minus a few things that we were carrying forward from past design iterations, we started from the ground up, from tire selection. 
-          I looked into different tires, available from the FSAE Tire-Testing Consortium, processed through some MATLAB scripts, and non-dimensionalized the data for the tire compound that we already have, given that alternative compounds do not yield a substantial enough improvement to replace all the tires which we currently have in stock.
-          Then, more "cost"-benefit analyses were performed to determine the roll-ride characteristics of the car, via a custom MATLAB suspension roll-ride-rate and lateral load transfer calculator, then using the results and re-dimensionalizing the tire data, we determined the optimum slip angles.
-          <br>
-          Then, we determined the optimum Ackermann percentage, determined the suspension hardpoints, and iterated our design using data generated by VI Grade's SuspensionGen software. Using these hardpoints, we then designed and optimized our bellcranks, and designed the chassis around these suspension hardpoints and other subsystem's needs.
-          <br>
-          Aside from design work, I also work on a lot of managerial tasks - resource and funding allocation, reaching out to sponsors and alumni to acquire parts, and learning from alumni to recover knowledge lost over the COVID years. 
+          I joined the lab in October 2024 as a part-time undergraduate researcher, working up to 12 hrs/wk in the Fall 2024 semester, 20hrs/wk in the 
+          Spring 2025 semester, and full-time during Summer 2025 (funded by the Summer Undergraduate Research Award). I worked under Prof. Franck Djeumou, 
+          with Prof. Sandipan Mishra's guidance. I worked extensively with Lucas Geiss and Ruoxiang Zhao, two fellow undergraduate students at RPI, as well as Côme Vincent, 
+          a visiting scholar from l'École Polytechnique. 
         </p>
+      
+      
+        </div>
 
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-green footer">
@@ -114,9 +110,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
     </div>
 
 
-  </div>
-  <div class="w3-container w3-padding-large center" >
-    <h4><i>Designed using resources from W3Schools</i></h4>
   </div>
   </footer>
   
