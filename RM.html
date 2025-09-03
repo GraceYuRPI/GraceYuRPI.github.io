@@ -24,7 +24,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
-    <a href="GraceYu_resume_portfolio.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
+    <a href="GraceYu_resume.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
   </div>
 </nav>
 
@@ -73,57 +73,71 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
   <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
     <h2><b>Projects</b></h2>
      </div>
+
+
 <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="RM.html">
-        <img src="\RM\RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
-      </a>
+      <!--<a href="/RM/tire_study.html">-->
+        <img src="/RM/tirestudy.png" alt="tire" style="width:100%" >
+      <!--</a>-->
       <div class="w3-container w3-light-gray">
-        <p><b>Rensselaer Motorsport (FSAE)</b></p>
+        <p><b>Tire Study</b>
+        <br>
+      Using FSAE Tire Testing Consortium tire data for various tire models, analyzed the steady-state and transient behavior of each
+    tire and selected the optimal tire compound for our vehicle. Used the same data to determine various suspension parameters such as caster and camber.
+  Deployed both the Pacejka and the LuGre tire models and compared their results.  </p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="SOTB.html">
-        <img src="\SOTB\SOTB_thumbnail.png" alt="SOTB" style="width:100%" class="w3-hover-opacity">
+      <a href="/RM/chassis_opt.html">
+        <img src="/RM/chassis_design.png" alt="chassis" style="width:100%" class="w3-hover-opacity">
       </a>
       <div class="w3-container w3-light-gray">
-        <p><b>Student on the Beamline</b></p>
+        <p><b>Iterative-FEA-Based Chassis Design Optimization</b></p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://github.com/AkiraY1/IntelligentAirfoilDesign">
-        <img src="\AirfoilML\airfoil_thumbnail.jpg" alt="AirfoilML" style="width:100%" class="w3-hover-opacity">
-      </a>
+      <!--<a href="/RM/suspension_opt.html">-->
+        <img src="/RM/susp.png" alt="AirfoilML" style="width:100%">
+      <!--</a>-->
       <div class="w3-container w3-light-gray">
-        <p><b>Machine Learning Based Cost Reduction of Airfoil Optimization</b></p>
+        <p><b>Parametric Suspension Design Optimization</b>
+        <br>
+      Simulated the elastokinematic behavior of the suspension in VI-Grade and coupled it with MATLAB scripts to study various parameters,
+    such as dynamic toe progression during steering and heave, various roll-ride characteristics. Currently working on roll-heave decoupling of the front suspension through a third damper.</p>
       </div>
     </div>
 
    <!-- Second Photo Grid-->
    <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="EE.html">
-        <img src="/EE/EE_thumbnail.png" alt="EE" style="width:100%" class="w3-hover-opacity">
-      </a>
+      <!--<a href="/RM/hub_design.html">-->
+        <img src="/RM/hub_render.png" alt="EE" style="width:100%">
+      <!--</a>-->
       <div class="w3-container w3-light-gray">
-        <p><b>Damped Oscillation of a Mass-Spring System</b></p>
+        <p><b>Wheel Hub Lightweighting</b>
+        <br>
+        Reduced front hub weight by 53% and rear hub weight by 59%. Improved manufacturability by switching to 
+         Al7075-T6 instead of 4340 steel and increasing internal fillet radii. </p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="MathIA.html">
-        <img src="/MathIA/MathIA_thumbnail.png" alt="MathIA" style="width:100%" class="w3-hover-opacity">
-      </a>
+      <!--<a href="/RM/rocker_design.html">-->
+        <img src="/RM/rear_rocker_fea2.png" alt="MathIA" style="width:100%">
+      <!--</a>-->
       <div class="w3-container w3-light-gray">
-        <p><b>Monte-Carlo Model of the Scattering Pattern Due to Collisions of Spherical Objects</b></p>
+        <p><b>Rocker Design</b>
+        <br>
+      Reduced front rocker weight by 47% including bearing weight and rear rocker by 19%. Improved rear rocker manufacturability
+      by reducing LDR and decreasing the number of necessary operations.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <a href="PhysIA.html">
-        <img src="PhysIA/PhysIA_thumbnail.png" alt="PhysIA" style="width:100%" class="w3-hover-opacity">
-      </a>
+        <img src="/RM/wheel_center.png" alt="center" style="width:100%">
       <div class="w3-container w3-light-gray">
-        <p><b>Measurement of Single Slit Diffraction Pattern Using an Linear Actuator </b></p>
+        <p><b>Wheel Center Lightweighting</b></p>
+        <p>Reduced the weight by ~10% and the maximum LDR during machining from 6.88 to 3.44.</p>
       </div>
     </div>
   </div>
